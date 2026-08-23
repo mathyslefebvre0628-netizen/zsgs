@@ -1,0 +1,25 @@
+{
+  "schemaVersion": 1,
+  "id": "autosave",
+  "version": "${version}",
+  "name": "Auto Save",
+  "description": "Automatic Minecraft world backups with restore support.",
+  "authors": ["monsieur"],
+  "license": "MIT",
+  "icon": "assets/autosave/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "fr.monsieur.autosave.AutoSave"
+    ],
+    "client": [
+      "fr.monsieur.autosave.client.AutoSaveClient"
+    ]
+  },
+  "depends": {
+    "fabricloader": ">=0.19.3",
+    "minecraft": "~26.2",
+    "java": ">=25",
+    "fabric-api": "*"
+  }
+}
